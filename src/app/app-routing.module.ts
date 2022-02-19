@@ -1,7 +1,15 @@
+import { EntrarComponent } from './entrar/entrar.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+
+  {path: '', redirectTo: 'entrar', pathMatch: 'full'}, /*toda vez que o servidor for vazio vai pra tela entrar */
+
+{path: 'entrar', component: EntrarComponent}, /*Array de objetos de rotas.... criando para rota entrar*/
+{path: 'cadastrar', component: CadastrarComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
