@@ -1,0 +1,7 @@
+#img-bg {
+  background-image: url(https://i.ibb.co/GCd5Y2n/entrar.webp.jpg); /*imagem salva no imgBB*/
+  min-height: 695px; /*minimo de altura...tamanho da imagem*/
+  background-position: center; /*centraliza*/
+  background-repeat: no-repeat; /*não repete a imagem*/
+  background-size: cover; /*preenche todo espaço que ele tem*/
+}
