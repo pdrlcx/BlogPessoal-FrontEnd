@@ -9,11 +9,11 @@
     <ul class="navbar-nav mr-auto d-flex align-items-center"> <!--mr-auto diz que a margem é auto e joga pra esquerda, m-auto deixa centralizado, ml-auto deixa pra direita... d-flex e align-items-center centraliza o Username com a foto-->
 
       <li class="nav-item active">
-        <img width="50px" heigth="50px" class="img-fluid rounded-circle" src="https:www.github.com/pdrlcx.png" alt="Foto de Perfil"> <!--img-fluid deixa a imagem responsiva... rounded-circle deixa a imagem redonda-->
+        <img width="50px" heigth="50px" class="img-fluid rounded-circle" src="https://www.github.com/pdrlcx.png" alt="Foto de Perfil"> <!--img-fluid deixa a imagem responsiva... rounded-circle deixa a imagem redonda-->
       </li>
 
       <li class="nav-item pl-3">
-        <p class="m-0 text-light font-weight-bold fs-16">Username</p> <!--m-0 tira a margem do texto... text-light deixa negrito... fs-16 chama css, deixa a fonte com 16pt-->
+        <p class="m-0 text-light font-weight-bold fs-16">Olá, {{nome}}</p> <!--m-0 tira a margem do texto... text-light deixa negrito... fs-16 chama css, deixa a fonte com 16pt-->
       </li>
 
       <li class="nav-item pl-3"> <!--pl-3 separa o Username da foto-->
@@ -26,7 +26,7 @@
     <ul class="navbar-nav ml-auto d-flex align-items-center">
       <li class="nav-item pl-3">
         <a href="">
-        <p class="m-0 font-weight-bold text-light fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></p>
+        <p (click)="sair()" class="m-0 font-weight-bold text-light fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></p>
       </a>
       </li>
     </ul>
